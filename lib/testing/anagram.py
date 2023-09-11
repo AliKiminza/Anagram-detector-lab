@@ -17,6 +17,7 @@ class Anagram :
     new_word = property(word, match,)
 
     def match_checker (self, new_list):
+        new_list=[]
         for new_list in self.match_list2 :
             return new_list != self.word and sorted(new_list) == sorted(self.word)
             self.word = new_list
@@ -26,4 +27,4 @@ class Anagram :
 anagram = Anagram("men")  
 print (anagram.word)
 anagram.new_word= "hello"         
-anagram.new_list
+#anagram.new_list
